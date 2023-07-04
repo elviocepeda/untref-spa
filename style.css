@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #272727;
+  background-color: #f1f0ec;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f1f0ec;
+}
+
+.header_image {
+  position: absolute;
+  width: 100%;
+  top: -50%;
+  left: 0;
+}
+
+.header h1,
+p {
+  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+  z-index: 100;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.navigation {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+  color: rgb(58, 51, 44);
+}
+
+.media_container {
+  display: flex;
+}
+
+.media_github,
+.media_linkedin {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.home,
+.about,
+.works,
+.contact {
+  height: 100vh;
+  padding: 1rem;
+  padding-top: 4rem;
+}
+
+.about {
+  background-color: rgb(204, 228, 190);
+}
+
+.works {
+  background-color: rgb(230, 172, 172);
+}
+
+.contact {
+  background-color: rgb(193, 231, 233);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer a {
+  color: rgb(68, 67, 64);
+  text-decoration: none;
+}
+
+.to_top_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 200;
+  width: 3rem;
+  height: 3rem;
+  bottom: 4rem;
+  right: 4rem;
+  background-color: rgb(19, 19, 19);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
