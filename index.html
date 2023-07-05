@@ -16,7 +16,6 @@
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                fill="#fff"
                 d="M4.5 20.79L12 2.5L19.5 20.79L18.79 21.5L12 18.5L5.20996 21.5L4.5 20.79ZM16.28 18.2L12 7.77002L7.71997 18.2L11.1899 16.67L12 16.31L12.8099 16.67L16.28 18.2Z"
               />
             </g>
@@ -24,19 +23,47 @@
         </div>
       </a>
       <header class="header">
-        <div class="logo">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M16.585,9.616,15.21,6h2.422A5.885,5.885,0,0,1,22.36,8.4l.787,1.075A4.431,4.431,0,0,1,23.867,11H16.952A6.5,6.5,0,0,0,16.585,9.616ZM12,4a1,1,0,0,0,1-1V1a1,1,0,0,0-2,0V3A1,1,0,0,0,12,4Zm2.722,6.343L13.071,6H10.938L9.26,10.452A4.709,4.709,0,0,0,9.1,11h5.821A4.623,4.623,0,0,0,14.722,10.343ZM16.553,3.9A1,1,0,0,0,17.9,3.447l1-2a1,1,0,1,0-1.79-.894l-1,2A1,1,0,0,0,16.553,3.9ZM11.988,18.887l2.786-5.253A4.591,4.591,0,0,0,14.941,13H9a4.585,4.585,0,0,0,.2.757ZM7.4,9.729,8.8,6H6.383A5.892,5.892,0,0,0,1.721,8.309L.9,9.383A4.366,4.366,0,0,0,.141,11h6.9A6.6,6.6,0,0,1,7.4,9.729ZM16.969,13a6.573,6.573,0,0,1-.344,1.4c-.015.04-3.756,7.074-3.759,7.075a.973.973,0,0,1-1.726.008s-3.774-6.912-3.79-6.955A6.586,6.586,0,0,1,6.994,13H.121a4.3,4.3,0,0,0,1.328,2.32l7.99,7.707a3.82,3.82,0,0,0,2.55.969,3.9,3.9,0,0,0,2.6-1l7.936-7.633A4.373,4.373,0,0,0,23.89,13ZM6.105,3.447A1,1,0,0,0,7.9,2.553l-1-2a1,1,0,1,0-1.79.894Z"
-            />
-          </svg>
-        </div>
         <nav class="navigation">
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#works">Works</a>
           <a href="#contact">Contact</a>
         </nav>
+        <nav class="burger">
+          <input type="checkbox" id="menu" class="checkbox" />
+          <label for="menu">
+            <svg viewBox="0 0 512 512">
+              <g>
+                <path
+                  d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"
+                />
+                <path
+                  d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"
+                />
+                <path
+                  d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"
+                />
+              </g>
+            </svg>
+          </label>
+          <div class="menu_list_container">
+            <ul>
+              <li>Link 1</li>
+              <li>Link 2</li>
+              <li>Link 3</li>
+              <li>Link 4</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="logo">
+          <div class="svg_container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M16.585,9.616,15.21,6h2.422A5.885,5.885,0,0,1,22.36,8.4l.787,1.075A4.431,4.431,0,0,1,23.867,11H16.952A6.5,6.5,0,0,0,16.585,9.616ZM12,4a1,1,0,0,0,1-1V1a1,1,0,0,0-2,0V3A1,1,0,0,0,12,4Zm2.722,6.343L13.071,6H10.938L9.26,10.452A4.709,4.709,0,0,0,9.1,11h5.821A4.623,4.623,0,0,0,14.722,10.343ZM16.553,3.9A1,1,0,0,0,17.9,3.447l1-2a1,1,0,1,0-1.79-.894l-1,2A1,1,0,0,0,16.553,3.9ZM11.988,18.887l2.786-5.253A4.591,4.591,0,0,0,14.941,13H9a4.585,4.585,0,0,0,.2.757ZM7.4,9.729,8.8,6H6.383A5.892,5.892,0,0,0,1.721,8.309L.9,9.383A4.366,4.366,0,0,0,.141,11h6.9A6.6,6.6,0,0,1,7.4,9.729ZM16.969,13a6.573,6.573,0,0,1-.344,1.4c-.015.04-3.756,7.074-3.759,7.075a.973.973,0,0,1-1.726.008s-3.774-6.912-3.79-6.955A6.586,6.586,0,0,1,6.994,13H.121a4.3,4.3,0,0,0,1.328,2.32l7.99,7.707a3.82,3.82,0,0,0,2.55.969,3.9,3.9,0,0,0,2.6-1l7.936-7.633A4.373,4.373,0,0,0,23.89,13ZM6.105,3.447A1,1,0,0,0,7.9,2.553l-1-2a1,1,0,1,0-1.79.894Z"
+              />
+            </svg>
+          </div>
+        </div>
         <div class="media_container">
           <div class="media_github">
             <svg viewBox="0 0 24 24">
@@ -89,14 +116,52 @@
           </div>
         </div>
       </header>
-      <section class="home">home</section>
-      <section class="about" id="about">about</section>
-      <section class="works" id="works">works</section>
-      <section class="contact" id="contact">contact</section>
+      <section class="home">
+        <div class="content">
+          <span>HELLO THERE, I'M LIO!</span>
+          <h1>FRONTEND<br /><span>DEVELOPER</span></h1>
+          <button><a href="#contact">HIRE ME!</a></button>
+        </div>
+      </section>
+      <section class="about" id="about">
+        ¡Hola! Soy Lionel, un desarrollador frontend apasionado por crear
+        experiencias web asombrosas. Con una sólida base en HTML, CSS y
+        JavaScript, me encanta transformar diseños en código interactivo y
+        funcional. Estoy constantemente buscando oportunidades para crecer y
+        aprender, manteniéndome al día con las últimas tendencias y tecnologías
+        en desarrollo web. Mi objetivo es crear aplicaciones y sitios web
+        intuitivos, estéticamente atractivos y altamente responsivos. Siempre
+        busco desafíos que me permitan mejorar mis habilidades y colaborar con
+        equipos talentosos. ¡Únete a mí en este viaje de desarrollo web y juntos
+        hagamos realidad tus ideas!
+      </section>
+      <section class="works" id="works">
+        <figure class="img_container">
+          <img src="./assets/01.jpg" alt="" />
+          <img src="./assets/02.png" alt="" />
+          <img src="./assets/03.jpg" alt="" />
+          <img src="./assets/04.png" alt="" />
+          <img src="./assets/05.png" alt="" />
+          <img src="./assets/06.png" alt="" />
+        </figure>
+      </section>
+      <section class="contact" id="contact">
+        <div class="form_container">
+          <form action="#">
+            <input type="text" placeholder="Escribí tu nombre" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Deja tu comentario!"
+            ></textarea>
+            <button>ENVIAR</button>
+          </form>
+        </div>
+      </section>
       <footer class="footer">
-        <h4>Elvio Cepeda</h4>
-        <a href="/activity/contact.html">Linkedin </a>
-        <a href="#">- Github</a>
+        <h4>LIONEL PORTFOLIO</h4>
       </footer>
     </div>
   </body>
